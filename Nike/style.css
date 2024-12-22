@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/img/NBA.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://github.com/Nah-Null/BKB/blob/main/img/NBA.jpg?raw=true');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
