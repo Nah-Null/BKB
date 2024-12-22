@@ -1,0 +1,106 @@
+.navbar {
+    background-image: url('img/sss.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 20px 30px;
+    margin: 20px 0;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+.brand {
+    margin-right: auto;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Hide checkbox */
+#toggle-menu {
+    display: none;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+#toggle-menu:checked + .menu-icon {
+    transform: rotate(90deg);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    #toggle-menu:checked + .menu-icon + .nav-links {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/* Style when checkbox is checked */
+.navbar-toggler input:checked + .checkmark span:nth-child(1) {
+    top: 14px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler input:checked + .checkmark span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler input:checked + .checkmark span:nth-child(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+}
