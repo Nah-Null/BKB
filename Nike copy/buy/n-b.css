@@ -1,5 +1,5 @@
 .navbar {
-    background-image: url('/img/NBA2.jpg');
+    background-image: url('https://github.com/Nah-Null/Gallery/blob/main/well%20done.jpg?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,4 +64,14 @@
 
 .navbar_b a:hover {
     color: #333;
+}
+
+.navbar-toggler {
+    background-color: #000000;
+    border: none;
+    border-radius: 50%;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
 }
